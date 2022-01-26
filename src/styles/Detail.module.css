@@ -1,0 +1,178 @@
+.wrapper {
+  height: 100vh;
+  background-color: #001101;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.main {
+  background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #001101;
+  opacity: 0.2;
+}
+
+.content {
+  width: 100%;
+  padding: 7rem 10rem;
+  color: white;
+  z-index: 2;
+  position: absolute;
+}
+
+.img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: white;
+  z-index: 2;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.rightContents {
+  margin-left: 6rem;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.input {
+  font-size: 15px;
+  background: #ffffff;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  -webkit-box-flex: 1;
+  line-height: 1.4;
+  width: 100%;
+  -webkit-appearance: none;
+  border-width: 1px;
+  color: #444951;
+  border-radius: 0;
+  font-weight: 400;
+  height: 45px;
+  border-color: #ffffff;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #4a56fc;
+  border-radius: 0;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  transition: all ease-in;
+  -webkit-transition: all ease-in;
+  -moz-transition: all ease-in;
+  -ms-transition: all ease-in;
+  -o-transition: all ease-in;
+}
+
+.button:hover {
+  background-color: #3540df;
+}
+
+.privacy {
+  font-size: 11px;
+  color: #787878;
+}
+
+.thankYou {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 24px;
+}
+
+.thankYouMessage {
+  padding-left: 12px;
+  color: #001101;
+}
+
+.icon {
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .consent {
+    color: #787878;
+    font-size: 11px;
+  }
+
+  .contents {
+    padding: 2rem 4rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .rightContents {
+    margin-left: 0rem;
+    flex: 1;
+    align-self: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .content {
+    padding: 1rem 2rem;
+  }
+
+  .description {
+    display: none;
+  }
+}
